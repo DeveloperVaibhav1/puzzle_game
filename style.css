@@ -1,0 +1,202 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=FAMILY_NAME:wght@WEIGHT_OR_RANGE&display=swap');
+
+
+
+*::after, *::before {
+    box-sizing: border-box;
+   
+  }
+
+
+:root {
+    --color: lightgray;
+    --border-radius: 10px;
+
+    
+    --aqua:  #7FDBFF;
+    --blue:  #0074D9;
+    --navy:  #001F3F;
+    --teal:  #39CCCC;
+    --green: #2ECC40;
+    --olive: #3D9970;
+    --lime:  #01FF70;
+    --yellow:  #FFDC00;
+    --orange:  #FF851B;
+    --red:     #FF4136;
+    --fuchsia: #F012BE;
+    --purple:  #B10DC9;
+    --maroon:  #85144B;
+    --white:  #FFFFFF;
+    --silver: #DDDDDD;
+    --gray:   #AAAAAA;
+    --black:  #111111;
+  
+}
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #111;
+    overflow: hidden;
+  }
+
+
+
+  header {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 2em;
+    color: white;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+  }
+
+
+body {
+    background-color:black;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Body{
+    color:black;
+}
+#puz,
+#puzz {
+    position: absolute;
+    border-radius: var(--border-radius) 0 var(--border-radius) 0;
+    user-select: none;
+}
+#puz {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(3, 1fr); 
+    gap: 0; 
+    overflow: visible; 
+}
+
+#puzz {
+    left: 0;
+    top: 0;
+    border: 0;
+    position: absolute;
+    box-sizing: border-box;
+
+}
+
+#puz i {
+    float: left;
+    width: 100px;
+    height: 100px;
+    outline: 1px dashed lightgray;
+}
+
+#puzz i {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background: var(--color);
+    background-image: var(--image);
+    background-size: 300px 300px;
+    cursor: move;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+}
+
+.first {
+    border-top-left-radius: var(--border-radius);
+    background-position: left top !important;
+}
+
+.secon {
+    background-position: center top !important;
+}
+
+.third {
+    border-top-right-radius:var(--border-radius); 
+    background-position: right top !important;
+}
+
+.fourt {
+    background-position: left center !important;
+}
+
+.fifth {
+    background-position: center center !important;
+}
+
+.sixth {
+    background-position: right center !important;
+}
+
+.seven {
+  border-bottom-left-radius:var(--border-radius); 
+    background-position: left bottom !important;
+}
+
+.eight {
+    background-position: center bottom !important;
+}
+
+.ninth {
+    border-bottom-right-radius: var(--border-radius);
+    background-position: right bottom !important;
+}
+
+.clicked {
+    box-shadow: 0 0 0 4px gray !important;
+}
+
+.dropped {
+    background: var(--color);
+    background-image: var(--image);
+    background-size: 300px 300px;
+}
+
+.done {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.allDone {
+    animation: allDone 1s linear forwards;
+    border: 3px solid lightgray !important;
+}
+
+.allDone i {
+    outline: 0 !important;
+}
+
+@keyframes allDone {
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+}
+
+#clicks {
+    font-size: 8px;
+    font-family: monospace;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+}
+
+
+
