@@ -40,7 +40,7 @@
         overflow: hidden;
       }
 
-      /* Header Styles */
+      
       header {
         width: 100%;
         text-align: center;
@@ -50,7 +50,7 @@
         text-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
       }
 
-      /* Footer Styles */
+      
       footer {
         width: 100%;
         text-align: center;
@@ -60,7 +60,7 @@
         bottom: 10px;
       }
 
-      /* Overlay background for loader */
+      
       .loader-overlay {
         position: absolute;
         top: 0;
@@ -92,7 +92,7 @@
         align-items: center;
       }
 
-      /* Smaller blobs with updated aspect ratio */
+      
       .blob {
         --border-radius: 115% 140% 145% 110% / 125% 140% 110% 125%;
         --border-width: 2vmin;  /* Adjusted the border width to make it smaller */
@@ -145,6 +145,7 @@
         }
       }
     `;
+
     document.head.appendChild(style);
 
   
