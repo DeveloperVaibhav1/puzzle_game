@@ -35,7 +35,7 @@
     allDoneElement.classList.toggle('allDone');
     }
 
-    // mobile functionality
+    
     var puzzleItemsMobile = document.querySelectorAll('#puzz i');
     puzzleItemsMobile.forEach(function (element) {
     element.addEventListener('mousedown', function () {
@@ -139,21 +139,21 @@
             }
         }
     
-        /* Mobile and tablet responsive design */
+        
         @media (max-width: 768px) {
             h1 {
             font-size: 28px; /* Smaller font size for mobile */
             }
         }
     
-        /* Small screen responsiveness */
+        
         @media (max-width: 480px) {
             h1 {
             font-size: 24px; /* Even smaller font size for very small screens */
             }
         }
     
-        /* Larger screen responsiveness */
+        
         @media (min-width: 1024px) {
             h1 {
             font-size: 42px; /* Larger font size for larger desktops */
