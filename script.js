@@ -192,7 +192,7 @@
         developerText.style.fontSize = "30px";
 
         const fullStackText = document.createElement("p");
-        fullStackText.textContent = "Insta - vaibhavsarkar_1";
+        fullStackText.textContent = "Insta - _.im_vaibhav";
         fullStackText.style.fontSize = "14px";
         fullStackText.style.color = "#ccc";
         fullStackText.style.lineHeight="0.2rem";
@@ -215,3 +215,4 @@
             footer.style.bottom = "0";
         }
     });
+
