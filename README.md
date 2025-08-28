@@ -49,7 +49,7 @@ Puzzle-Game/
 - **index.html**: The main HTML file.
 - **style.css**: Contains the styles for the game.
 - **script.js**: Contains the game logic.
-- **loader.js/**: contains loader of the webpage logic.
+- **loader.js**: contains loader of the webpage logic.
 
 ## Contributing
 
